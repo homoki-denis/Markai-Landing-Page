@@ -227,7 +227,7 @@ button {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  margin: 8rem auto;
+  margin: 5rem auto;
   text-align: center;
 }
 
@@ -262,6 +262,71 @@ button {
   width: 100%;
   height: auto;
   padding: 0 1rem;
+}
+
+/* //////////////////// Offers Section /////////////////// */
+
+.offers-section {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+}
+
+.offers-first-col,
+.offers-second-col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+}
+
+.offers-second-col {
+  flex-direction: row-reverse;
+}
+
+.first-left-col,
+.second-left-col {
+  border-left: 3px solid #ffffff;
+  padding-left: 2rem;
+}
+
+.offers-first-subtitle,
+.offers-second-subtitle {
+  font-size: 1.5rem;
+}
+
+.offers-first-title,
+.offers-second-title {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.first-right-col img,
+.second-right-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.first-left-col,
+.first-right-col,
+.second-left-col,
+.second-right-col {
+  width: 50%;
+}
+
+.offers-first-subtitle-2,
+.offers-second-subtitle-2 {
+  margin: 1rem 0;
+}
+
+.offers-first-button button,
+.offers-second-button button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 /* ////////////// Media queries //////////////////////////////// */
@@ -338,11 +403,36 @@ button {
   .video-subtitle-2 {
     width: 100%;
   }
+
+  .offers-first-col,
+  .offers-second-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .first-left-col,
+  .first-right-col,
+  .second-left-col,
+  .second-right-col {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .first-left-col,
+  .second-left-col {
+    border-left: none;
+  }
 }
 @media screen and (max-width: 583px) {
   .ai-text {
     font-size: 1rem;
     margin: 2rem 0;
+  }
+  .offers-first-title,
+  .offers-second-title {
+    font-size: 1.5rem;
   }
 }
 
