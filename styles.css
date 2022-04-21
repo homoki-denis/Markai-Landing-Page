@@ -282,6 +282,7 @@ button {
 
 .offers-second-col {
   flex-direction: row-reverse;
+  margin-top: 3rem;
 }
 
 .first-left-col,
@@ -327,6 +328,60 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
+}
+
+/* /////////////////////////// Sales Section //////////////////// */
+
+.sales-section {
+  color: #fff;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.sales-container {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 240, 255, 0.21) 0%,
+    rgba(255, 0, 122, 0) 100%
+  );
+  border: 2px solid transparent;
+  background-image: linear-gradient(#1f1b42, #1f1b42),
+    linear-gradient(to right, #00eeff00, #ff007a);
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sales-title {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 2rem;
+}
+
+.sales-subtitle {
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+
+.sales-button {
+  padding-bottom: 2rem;
+}
+
+.sales-button button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sales-title,
+.sales-subtitle,
+.sales-button {
+  margin: 0 0 0 3rem;
 }
 
 /* ////////////// Media queries //////////////////////////////// */
@@ -393,7 +448,6 @@ button {
     justify-content: center;
     align-items: center;
     margin: 2rem auto;
-    text-align: center;
   }
 
   .features-title {
@@ -409,7 +463,6 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
   }
 
   .first-left-col,
@@ -417,12 +470,26 @@ button {
   .second-left-col,
   .second-right-col {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .first-left-col,
   .second-left-col {
     border-left: none;
+    padding: 0;
+  }
+  .sales-title {
+    font-size: 1.5rem;
+  }
+  .sales-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .sales-title,
+  .sales-subtitle,
+  .sales-button {
+    margin: 0 1rem;
   }
 }
 @media screen and (max-width: 583px) {
@@ -433,6 +500,12 @@ button {
   .offers-first-title,
   .offers-second-title {
     font-size: 1.5rem;
+  }
+  .sales-title {
+    font-size: 1rem;
+  }
+  .sales-subtitle {
+    font-size: 1rem;
   }
 }
 
