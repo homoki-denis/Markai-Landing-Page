@@ -1,0 +1,366 @@
+/* ////////////////////// Globals ///////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #080524;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  color: #fff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.content-container-navbar {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.background-header {
+  background-image: url(images/header-bg.png);
+  height: 100vh;
+}
+
+/* ////////////////////// Navbar Section ///////////////////////// */
+
+.navbar-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-links > a {
+  margin: 0 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.navbar-header {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-buttons button {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar-button-1 {
+  border: none;
+  background-color: transparent;
+}
+
+.primary-button {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%)
+    3;
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+}
+.navbar-menu {
+  display: none;
+}
+
+/* /////////////////////////// Main Section /////////////////////////// */
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: #fff;
+  text-align: center;
+}
+
+.main-subtitle {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-subtitle-2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 50%;
+}
+
+.main-button {
+  margin-top: 3rem;
+}
+
+.main-button button {
+  padding: 1rem 2rem;
+}
+
+.main-button span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  vertical-align: super;
+  padding-right: 1rem;
+}
+
+.main-button img {
+  width: 3rem;
+  vertical-align: super;
+}
+
+.arrow-down {
+  margin-top: 8rem;
+  animation: upDown 0.5s infinite alternate;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ////////////////////// AI Section ///////////////////////////////// */
+
+.ai-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.ai-text {
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  padding: 0 0 0 1rem;
+}
+
+.ai-text,
+.ai-img {
+  width: 50%;
+}
+
+.ai-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ////////////////////// Features Section /////////////////////// */
+
+.features-cards {
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+
+.feature-card {
+  width: 370px;
+  height: 270px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#1f1b42, #1f1b42),
+    linear-gradient(to right, #00f0ff, #ff007a);
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: 2rem 1rem -1rem 0;
+}
+
+.feature-card-img {
+  margin: 2rem 2rem 0 2rem;
+}
+
+.feature-card-title {
+  margin: 0 2rem 2rem 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.features-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-subtitle {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* /////////////////////// Video Section /////////////////////// */
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+.video-main {
+  margin: 3rem 0;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  left: 43%;
+  top: 32%;
+}
+
+.video-subtitle {
+  font-size: 2rem;
+}
+
+.video-subtitle-2 {
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.video-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f0ff 0%, #5773ff 46.87%, #ff007a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.video-main .img-main {
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+/* ////////////// Media queries //////////////////////////////// */
+@media screen and (max-width: 1200px) {
+  .features-cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .navbar-header {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    display: none;
+  }
+
+  .navbar-links a {
+    margin: 0.3rem 0;
+  }
+  .navbar-buttons {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar-buttons button {
+    margin: 0.5rem 0;
+  }
+  .navbar-section {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .navbar-menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .main-subtitle-2 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .ai-section {
+    flex-direction: column-reverse;
+  }
+
+  .ai-text,
+  .ai-img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .features-title {
+    font-size: 2rem;
+  }
+
+  .video-subtitle-2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 583px) {
+  .ai-text {
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .main-subtitle {
+    font-size: 1.5rem;
+  }
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .main-subtitle-2 {
+    font-size: 1rem;
+  }
+  .main-button button {
+    padding: 0.2rem 1rem;
+  }
+  .video-title {
+    font-size: 2rem;
+  }
+}
