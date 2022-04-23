@@ -525,6 +525,9 @@ footer {
 
 .background-footer {
   background-image: url("images/background-footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-section {
